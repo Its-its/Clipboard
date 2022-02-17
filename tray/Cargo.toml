@@ -1,0 +1,18 @@
+[package]
+name = "clipboard-tray"
+version = "0.1.0"
+authors = ["Timothy <2779546+Its-its@users.noreply.github.com>"]
+edition = "2021"
+
+[dependencies]
+clipboard-common = { path = "../common" }
+
+log = "0.4.14"
+log4rs = "1.0.0"
+
+anyhow = "1.0.53"
+lazy_static = "1.4.0"
+
+winapi = { version = "0.3.9", features = ["winuser", "windef", "minwindef", "shellapi", "libloaderapi", "commctrl", "basetsd"] }
+crossbeam-channel = "0.5.2"
+trayicon = { version = "0.1.3", features = ["crossbeam-channel"] }

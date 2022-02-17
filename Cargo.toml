@@ -1,0 +1,10 @@
+[workspace]
+members = [
+	"application",
+	"common",
+	"tray"
+]
+
+default-members = [
+	"tray"
+]

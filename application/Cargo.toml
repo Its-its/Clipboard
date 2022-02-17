@@ -1,0 +1,40 @@
+[package]
+name = "clipboard-app"
+version = "0.1.0"
+authors = ["Timothy <2779546+Its-its@users.noreply.github.com>"]
+edition = "2021"
+# build = "build.rs"
+
+[dependencies]
+clipboard-common = { path = "../common" }
+
+rusqlite = { version = "0.26.3", features = ["bundled", "chrono", "blob", "serde_json"] }
+eframe = { version = "0.16.0", features = ["default_fonts", "egui_glium", "persistence"] }
+sha2 = "0.10.1"
+
+chrono = "0.4.19"
+anyhow = "1.0.53"
+log = "0.4.14"
+log4rs = "1.0.0"
+
+toml = "0.5.8"
+serde_json = "1.0.78"
+serde = { version = "1.0.136", features = ["derive"] }
+
+image = "0.24"
+
+# Windows
+# [target.'cfg(windows)'.dependencies]
+# windows-win = "2.4.1"
+# clipboard-win = "4.4.1"
+
+
+
+# Not Windows
+# [target.'cfg(not(windows))'.dependencies]
+# cli-clipboard = "0.2.0"
+
+# TODO: windows program icon
+# [build-dependencies]
+# winapi = "0.3.9"
+# winres = "0.1.12"

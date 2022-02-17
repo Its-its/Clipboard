@@ -16,3 +16,8 @@ and then:
 `cargo run --bin clipboard-tray --release`
 
 The first command builds the GUI Application. The second command builds AND runs the Tray Application and Clipboard Listener.
+
+
+## PICTURE!
+
+![img](https://i.thick.at/NarcolepticRedhandedTamarin009.png)

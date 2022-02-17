@@ -1,5 +1,7 @@
 #![allow(clippy::new_without_default)]
 
+#![windows_subsystem = "windows"]
+
 use std::sync::{Arc, RwLock};
 
 use chrono::{DateTime, Utc};

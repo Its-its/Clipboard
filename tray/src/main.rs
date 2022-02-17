@@ -1,3 +1,5 @@
+#![windows_subsystem = "windows"]
+
 use anyhow::Result;
 use clipboard_common::{Listener, Config, StorageContainer};
 use lazy_static::lazy_static;
